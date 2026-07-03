@@ -1,43 +1,43 @@
 # Commercial-Intelligence-Copilot-RETAIL-GPT-
 An Agentic AI assistant for FMCG Commercial Analytics.  Features  ✓ SQL Analytics  ✓ Enterprise RAG  ✓ Tool Calling  ✓ Hybrid Retrieval  ✓ Agno Agent  ✓ LanceDB  ✓ Gemini  Architecture
 
-# 🏗️ Architecture
+## 🏗️ System Architecture
 
 ```mermaid
 flowchart TB
 
-    U[👤 Business User]
+    USER[Business User]
 
-    U --> A[🤖 Commercial Intelligence Copilot<br/>Agno Agent]
+    USER --> AGENT[Commercial Intelligence Copilot<br>Agno Agent]
 
-    A --> D{Reasoning & Tool Selection}
+    AGENT --> DECISION{Determine Query Type}
 
-    D -->|Sales / Revenue / SKU Queries| SQLT[📊 Sales Analytics Tool]
+    DECISION -->|Sales Analytics| SQLTOOL[Sales Analytics Tool]
 
-    D -->|Policies / Ingredients / FAQs| K[📚 Agno Knowledge]
+    DECISION -->|Knowledge Search| KNOWLEDGE[Agno Knowledge]
 
-    D -->|Hybrid Questions| SQLT
-    D -->|Hybrid Questions| K
+    DECISION -->|Hybrid Query| SQLTOOL
+    DECISION -->|Hybrid Query| KNOWLEDGE
 
-    SQLT --> G1[🧠 Gemini 2.5 Flash<br/>Natural Language → SQL]
+    SQLTOOL --> GEMINI[Gemini 2.5 Flash<br>Generate SQL]
 
-    G1 --> SQL[(🗄️ SQLite Database)]
+    GEMINI --> SQLITE[(SQLite Database)]
 
-    SQL --> SR[Structured Results]
+    SQLITE --> RESULTS[Structured Results]
 
-    K --> L[(🔍 LanceDB)]
+    KNOWLEDGE --> LANCEDB[(LanceDB)]
 
-    L --> E[SentenceTransformer<br/>BAAI/bge-small-en-v1.5]
+    LANCEDB --> EMBEDDER[SentenceTransformer<br>BAAI bge-small-en-v1.5]
 
-    E --> PDF[(📄 Commercial PDFs)]
+    EMBEDDER --> PDFS[Commercial PDF Documents]
 
-    PDF --> INGEST[Knowledge.insert()]
+    PDFS --> INGEST[Knowledge Ingestion]
 
-    SR --> A
+    RESULTS --> AGENT
 
-    L --> A
+    LANCEDB --> AGENT
 
-    A --> R[💡 Grounded Business Answer]
+    AGENT --> RESPONSE[Grounded Business Response]
 
-    R --> U
+    RESPONSE --> USER
 ```
