@@ -10,70 +10,31 @@ LanceDB
 Gemini Architecture
 
 ## 🏗️ System Architecture
-                    Business User
-                          │
-                          ▼
-        ┌─────────────────────────────────┐
-        │  Commercial Intelligence Agent  │
-        │             (Agno)              │
-        └───────────────┬─────────────────┘
-                        │
-        ┌───────────────┴────────────────┐
-        │                                │
-        ▼                                ▼
- ┌───────────────┐              ┌────────────────┐
- │ Sales Tool    │              │ Knowledge API  │
- └──────┬────────┘              └──────┬─────────┘
-        │                              │
-        ▼                              ▼
- ┌───────────────┐              ┌────────────────┐
- │ Gemini SQL    │              │ LanceDB        │
- │ Generation    │              │ Vector Store   │
- └──────┬────────┘              └──────┬─────────┘
-        │                              │
-        ▼                              ▼
- ┌───────────────┐              ┌────────────────┐
- │ SQLite        │              │ Commercial PDFs│
- │ Sales DB      │              │ + Embeddings   │
- └───────────────┘              └────────────────┘
-```mermaid
-flowchart TB
+## System Architecture
 
-    USER[Business User]
+                    Commercial Intelligence Copilot
 
-    USER --> AGENT[Commercial Intelligence Copilot<br>Agno Agent]
+                           Business User
+                                  │
+                                  ▼
+                  ┌─────────────────────────┐
+                  │     Agno AI Agent       │
+                  └──────────┬──────────────┘
+                             │
+             ┌───────────────┴────────────────┐
+             │                                │
+             ▼                                ▼
+    Sales Analytics Tool             Agno Knowledge
+             │                                │
+             ▼                                ▼
+     Gemini SQL Generator               LanceDB
+             │                                ▲
+             ▼                                │
+        SQLite Database          SentenceTransformer
+                                               ▲
+                                               │
+                                       Commercial PDFs
 
-    AGENT --> DECISION{Determine Query Type}
-
-    DECISION -->|Sales Analytics| SQLTOOL[Sales Analytics Tool]
-
-    DECISION -->|Knowledge Search| KNOWLEDGE[Agno Knowledge]
-
-    DECISION -->|Hybrid Query| SQLTOOL
-    DECISION -->|Hybrid Query| KNOWLEDGE
-
-    SQLTOOL --> GEMINI[Gemini 2.5 Flash<br>Generate SQL]
-
-    GEMINI --> SQLITE[(SQLite Database)]
-
-    SQLITE --> RESULTS[Structured Results]
-
-    KNOWLEDGE --> LANCEDB[(LanceDB)]
-
-    LANCEDB --> EMBEDDER[SentenceTransformer<br>BAAI bge-small-en-v1.5]
-
-    EMBEDDER --> PDFS[Commercial PDF Documents]
-
-    PDFS --> INGEST[Knowledge Ingestion]
-
-    RESULTS --> AGENT
-
-    LANCEDB --> AGENT
-
-    AGENT --> RESPONSE[Grounded Business Response]
-
-    RESPONSE --> USER
-```
 ## 📚 Knowledge Ingestion Pipeline
 
 ```mermaid
