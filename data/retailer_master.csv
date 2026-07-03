@@ -1,0 +1,101 @@
+STORE_ID,STORE_NAME,RETAILER,STATE,REGION,CHANNEL
+1,Young-Holloway,More,Karnataka,South,E-Commerce
+2,"Bautista, Chavez and Thomas",Nature's Basket,Kerala,South,General Trade
+3,Fernandez-Acosta,Vishal Mega Mart,UP,North,Modern Trade
+4,Barry-Lopez,Metro Cash & Carry,Rajasthan,East,Modern Trade
+5,"Duncan, Ballard and Porter",More,Rajasthan,North,Modern Trade
+6,"Lopez, Harris and Murray",Metro Cash & Carry,Tamil Nadu,East,General Trade
+7,"Yates, Morgan and Lopez",Vishal Mega Mart,UP,North,E-Commerce
+8,Coleman Inc,Easyday,Tamil Nadu,West,Modern Trade
+9,"Sullivan, Jones and Johnson",Nature's Basket,UP,East,E-Commerce
+10,Knapp-Johnson,More,Tamil Nadu,North,E-Commerce
+11,Oliver Ltd,More,UP,North,Modern Trade
+12,"Espinoza, Bryant and Horne",Reliance Fresh,Kerala,East,General Trade
+13,Scott-Roberts,Star Bazaar,Maharashtra,East,General Trade
+14,White-Burke,More,UP,North,E-Commerce
+15,Jacobson-Burnett,Big Bazaar,Delhi,South,General Trade
+16,"Lewis, Garcia and Jones",Metro Cash & Carry,UP,South,E-Commerce
+17,Smith-Morris,Star Bazaar,Karnataka,South,Modern Trade
+18,Marquez Inc,Star Bazaar,Kerala,East,Modern Trade
+19,"Gallegos, Dodson and Shepherd",More,Rajasthan,South,E-Commerce
+20,Franklin-Pratt,Easyday,Kerala,West,Modern Trade
+21,"Long, Robinson and Wilkinson",Spencer's,Maharashtra,South,E-Commerce
+22,Smith LLC,Nature's Basket,UP,West,E-Commerce
+23,"Harris, Adams and Davenport",Metro Cash & Carry,Rajasthan,South,Modern Trade
+24,"Barron, Gonzalez and Daniels",Nature's Basket,Telangana,North,Modern Trade
+25,Frank Inc,Reliance Fresh,Maharashtra,South,E-Commerce
+26,Wolf-Donovan,Metro Cash & Carry,Tamil Nadu,West,General Trade
+27,Wilson-Leonard,Vishal Mega Mart,Telangana,East,E-Commerce
+28,"Newton, Berry and Brown",DMart,Tamil Nadu,East,E-Commerce
+29,Rivera-Williams,Star Bazaar,Tamil Nadu,East,General Trade
+30,Reynolds Inc,Big Bazaar,Telangana,North,E-Commerce
+31,Cross Group,Spencer's,Maharashtra,North,E-Commerce
+32,Carr-Richards,Spencer's,Delhi,South,General Trade
+33,Potter PLC,Big Bazaar,Karnataka,East,General Trade
+34,Cunningham Group,DMart,Tamil Nadu,East,General Trade
+35,Thomas-Vasquez,More,Karnataka,South,E-Commerce
+36,Ortega-Boyer,Reliance Fresh,Tamil Nadu,West,Modern Trade
+37,Banks-Lamb,Nature's Basket,Maharashtra,South,E-Commerce
+38,"Moore, Armstrong and Gomez",Easyday,Maharashtra,East,E-Commerce
+39,"Lutz, Martin and Taylor",Vishal Mega Mart,Kerala,South,E-Commerce
+40,Romero-Douglas,More,UP,West,E-Commerce
+41,"Nelson, Cochran and Mitchell",Star Bazaar,Telangana,West,Modern Trade
+42,"Thompson, Anderson and Mckinney",More,Delhi,North,General Trade
+43,Brown Ltd,DMart,Delhi,South,Modern Trade
+44,Patton LLC,Reliance Fresh,Karnataka,South,Modern Trade
+45,Gates Inc,DMart,Rajasthan,North,E-Commerce
+46,Howard LLC,More,UP,West,Modern Trade
+47,Rios-Love,Nature's Basket,Maharashtra,West,Modern Trade
+48,Hull-Howard,Easyday,Kerala,South,Modern Trade
+49,"Crawford, West and Glover",Reliance Fresh,Kerala,East,General Trade
+50,Anderson Inc,Metro Cash & Carry,Telangana,North,E-Commerce
+51,"Jackson, Green and Jones",Reliance Fresh,Karnataka,West,E-Commerce
+52,Larson-Bishop,Star Bazaar,Tamil Nadu,South,Modern Trade
+53,Wilson-Parker,More,Telangana,South,General Trade
+54,"Robinson, Klein and Smith",Big Bazaar,UP,West,Modern Trade
+55,"Obrien, Hernandez and Serrano",Reliance Fresh,Telangana,North,Modern Trade
+56,"Fleming, Johnson and Garcia",Nature's Basket,Karnataka,North,Modern Trade
+57,"Page, Townsend and Stone",Big Bazaar,Kerala,West,General Trade
+58,Williams PLC,More,Kerala,North,Modern Trade
+59,Osborn Ltd,Metro Cash & Carry,Karnataka,West,General Trade
+60,Parker PLC,Easyday,UP,West,E-Commerce
+61,Terry Inc,Nature's Basket,Telangana,South,Modern Trade
+62,Johnson Ltd,Spencer's,Delhi,North,E-Commerce
+63,"Peterson, Wright and Cherry",Nature's Basket,Karnataka,East,Modern Trade
+64,Ballard LLC,DMart,Telangana,South,Modern Trade
+65,Carlson Inc,Nature's Basket,Tamil Nadu,South,Modern Trade
+66,Khan PLC,Vishal Mega Mart,Tamil Nadu,South,General Trade
+67,Gallegos-Green,Reliance Fresh,Delhi,North,E-Commerce
+68,Wilcox LLC,Reliance Fresh,Kerala,East,General Trade
+69,Miller LLC,More,Rajasthan,South,General Trade
+70,"Moreno, Huffman and Anderson",Metro Cash & Carry,Maharashtra,East,General Trade
+71,Garcia-Thomas,Star Bazaar,Tamil Nadu,North,General Trade
+72,Davenport-Dawson,Vishal Mega Mart,Tamil Nadu,North,E-Commerce
+73,"Hopkins, Carpenter and Cross",More,UP,South,General Trade
+74,Moore LLC,Reliance Fresh,Delhi,East,General Trade
+75,Roberts-Martin,Big Bazaar,Telangana,East,E-Commerce
+76,"Moore, Larson and Mejia",Nature's Basket,Karnataka,East,E-Commerce
+77,"Beck, Powers and Andrade",Reliance Fresh,Maharashtra,East,Modern Trade
+78,"Cox, Holder and Gilmore",Reliance Fresh,Maharashtra,East,General Trade
+79,Lopez Group,Vishal Mega Mart,Delhi,East,Modern Trade
+80,"Townsend, Garcia and Lawrence",Spencer's,Telangana,East,Modern Trade
+81,"Gibson, Robinson and Leonard",Reliance Fresh,Kerala,East,Modern Trade
+82,Jones-Bryan,DMart,Rajasthan,South,E-Commerce
+83,Boone LLC,Spencer's,Maharashtra,West,E-Commerce
+84,Hobbs-Johnson,Metro Cash & Carry,Karnataka,North,Modern Trade
+85,Buck PLC,Big Bazaar,Karnataka,East,E-Commerce
+86,Brown-Parks,Nature's Basket,Maharashtra,West,Modern Trade
+87,"Hampton, Shannon and Bean",DMart,UP,East,Modern Trade
+88,Howard-Moody,Star Bazaar,Delhi,South,E-Commerce
+89,Mosley-Hernandez,Reliance Fresh,Rajasthan,West,E-Commerce
+90,Smith and Sons,Big Bazaar,Delhi,South,Modern Trade
+91,Myers PLC,Metro Cash & Carry,Karnataka,South,E-Commerce
+92,"Rubio, Hicks and Mitchell",Star Bazaar,Kerala,South,General Trade
+93,Parker Ltd,Big Bazaar,Tamil Nadu,West,Modern Trade
+94,Baker-Gray,Easyday,Delhi,South,General Trade
+95,Morales PLC,Star Bazaar,UP,South,Modern Trade
+96,Fernandez and Sons,DMart,Delhi,West,General Trade
+97,"Randall, Chavez and Valentine",Spencer's,Tamil Nadu,East,General Trade
+98,James Inc,Nature's Basket,Kerala,East,Modern Trade
+99,"Hester, Poole and Hampton",Reliance Fresh,UP,South,E-Commerce
+100,"Wilson, Holland and Boone",Spencer's,Karnataka,North,E-Commerce

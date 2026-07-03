@@ -1,0 +1,9 @@
+SKU_ID,SKU_NAME,BRAND,CATEGORY,PACK_SIZE,MRP
+1000,Pringles Original,Pringles,Snacks,50,10
+1001,Pringles Sour Cream,Pringles,Snacks,150,20
+1002,Pringles Hot & Spicy,Pringles,Snacks,100,20
+1003,Chocos,Kellogg's,Cereal,50,120
+1004,Corn Flakes,Kellogg's,Cereal,250,10
+1005,Muesli,Kellogg's,Cereal,250,50
+1006,Oats,Kellogg's,Breakfast,50,10
+1007,Granola,Kellogg's,Breakfast,50,20
