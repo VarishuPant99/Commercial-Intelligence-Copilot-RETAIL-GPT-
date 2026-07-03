@@ -1,8 +1,41 @@
 # Commercial-Intelligence-Copilot-RETAIL-GPT-
-An Agentic AI assistant for FMCG Commercial Analytics.  Features  ✓ SQL Analytics  ✓ Enterprise RAG  ✓ Tool Calling  ✓ Hybrid Retrieval  ✓ Agno Agent  ✓ LanceDB  ✓ Gemini  Architecture
+An Agentic AI assistant for FMCG Commercial Analytics. 
+Features:
+SQL Analytics
+Enterprise RAG
+Tool Calling
+Hybrid Retrieval
+Agno Agent
+LanceDB
+Gemini Architecture
 
 ## 🏗️ System Architecture
-
+                    Business User
+                          │
+                          ▼
+        ┌─────────────────────────────────┐
+        │  Commercial Intelligence Agent  │
+        │             (Agno)              │
+        └───────────────┬─────────────────┘
+                        │
+        ┌───────────────┴────────────────┐
+        │                                │
+        ▼                                ▼
+ ┌───────────────┐              ┌────────────────┐
+ │ Sales Tool    │              │ Knowledge API  │
+ └──────┬────────┘              └──────┬─────────┘
+        │                              │
+        ▼                              ▼
+ ┌───────────────┐              ┌────────────────┐
+ │ Gemini SQL    │              │ LanceDB        │
+ │ Generation    │              │ Vector Store   │
+ └──────┬────────┘              └──────┬─────────┘
+        │                              │
+        ▼                              ▼
+ ┌───────────────┐              ┌────────────────┐
+ │ SQLite        │              │ Commercial PDFs│
+ │ Sales DB      │              │ + Embeddings   │
+ └───────────────┘              └────────────────┘
 ```mermaid
 flowchart TB
 
@@ -40,4 +73,59 @@ flowchart TB
     AGENT --> RESPONSE[Grounded Business Response]
 
     RESPONSE --> USER
+```
+## 📚 Knowledge Ingestion Pipeline
+
+```mermaid
+flowchart LR
+
+A[Commercial PDFs]
+
+--> B[Agno Knowledge]
+
+--> C[PDF Reader]
+
+--> D[Automatic Chunking]
+
+--> E[SentenceTransformer Embeddings]
+
+--> F[(LanceDB)]
+```
+
+## 🚀 Runtime Query Flow
+
+```mermaid
+sequenceDiagram
+
+actor User
+
+participant Agent as Agno Agent
+
+participant Tool as Sales Tool
+
+participant Gemini
+
+participant SQL as SQLite
+
+participant KB as LanceDB
+
+User->>Agent: Which SKU generated highest sales and what allergens does it contain?
+
+Agent->>Tool: sales_analytics(question)
+
+Tool->>Gemini: Generate SQL
+
+Gemini-->>Tool: SQL Query
+
+Tool->>SQL: Execute SQL
+
+SQL-->>Tool: Top Selling SKU
+
+Tool-->>Agent: Pringles Original
+
+Agent->>KB: Search knowledge
+
+KB-->>Agent: Product Information
+
+Agent-->>User: Final Combined Response
 ```
